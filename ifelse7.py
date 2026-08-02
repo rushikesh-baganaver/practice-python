@@ -5,23 +5,29 @@ op = input ( "Enter the operation :")
 num2 = float (input("Enter the second number : "))
 
 if op == "+" :
-    print ("The addition of given numbers is :", num1+num2)
+    print ("The addition of given numbers is :", num1 + num2)
 
 elif op == "-" :
-    print ("the subtraction of given numbers is :", num1-num2)
+    print ("the subtraction of given numbers is :", num1 - num2)
 
 elif op == "*" :
-    print("the multiplication of given numbers is :", num1*num2)
+    print("the multiplication of given numbers is :", num1 * num2)
 
 elif  op == "/" : 
     if num2 == 0 :
-        print ("not defined")
+        print ("Not Defined")
 
     else :
-        print("the division of given numbers is :", num1/num2)
+        print("the division of given numbers is :", num1 / num2)
+
+elif op == "%" :
+    if num2 == 0 :
+            print ("Not Defined")
+    else :
+        print ("The remainder of num1/num2 is :", num1 % num2)
 
 else :
-    exit()
+   print("Invalid Operator, Supported operators: +,-,/,* or %")
 
 
 
